@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center;
+  padding: 88px 0px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center;
+}
+.card {
+  width: 327px;
+  height: 442px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block; /* Ensures the image doesn't inherit unexpected spacing */
+}
+.card-sedan {
+  border-radius: 8px 8px 0px 0px;
+  background: #e28625;
+}
+
+.card-suvs {
+  background: #006971;
+}
+
+.card-luxury {
+  border-radius: 0px 0px 8px 8px;
+  background: #004140;
+}
+.image-container {
+  width: 64px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+p {
+  color: #fff;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+
+button {
+  border-radius: 25px;
+  background: #f2f2f2;
+  width: 146px;
+  height: 48px;
+  flex-shrink: 0;
+  border: none;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+  cursor: pointer;
+}
+button:hover {
+  border-radius: 25px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.btn-sedans {
+  color: #e28625;
+}
+.btn-suvs {
+  color: #006971;
+}
+.btn-luxury {
+  color: #004140;
+}
+.btn-sedans:hover {
+    background: #e28625;
+}
+.btn-suvs:hover {
+    background: #006971;
+}
+.btn-luxury:hover {
+  background: #004140;
+}
+@media (min-width: 1025px) {
+  main {
+    flex-direction: row;
+  }
+  .card-sedan {
+    border-radius: 8px 0px 0px 0px;
+    background: #e28625;
+  }
+
+  .card-suvs {
+    background: #006971;
+  }
+
+  .card-luxury {
+    border-radius: 0px 9px 0px 0px;
+    background: #004140;
+  }
+}
